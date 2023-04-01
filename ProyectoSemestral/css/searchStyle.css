@@ -1,0 +1,281 @@
+body {
+    font-family: Hind,sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 22px;
+    color: #2b0202;
+    background: #ffffff;
+    margin: 0;
+    overflow-x: hidden;
+}
+body {
+    background-position: center 0px!important;
+    background-repeat: no-repeat!important;
+    overflow-x: hidden;
+}
+
+/* manga citrus */
+.titulo{
+    font-size:15px;
+}
+.alinear{
+    display: inline-block;
+    margin-top: 1rem;
+    width: 200px;
+    height: 300px;
+    font-size: 1.8rem;
+    cursor: pointer;
+    box-shadow: 0 .5rem 1rem  rgba(0, 0, 0, .1);
+    transition: all .3s linear;
+}
+.alinear:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.editorial {
+    display: inline-block;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    color: #999999;
+}
+
+.boton-agregar {
+    background-color: #6f0009;
+    border: 0px solid #6f0009;
+    color: white;
+    padding: 4px 16px 11px;
+}
+/* manga banana fish */
+.titulo2{
+    font-size:22px;
+}
+.alinear2{
+    display: inline-block;
+    margin-top: 1rem;
+    width: 200px;
+    height: 300px;
+    font-size: 1.8rem;
+    cursor: pointer;
+    box-shadow: 0 .5rem 1rem  rgba(0, 0, 0, .1);
+    transition: all .3s linear;
+}
+.alinear2:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.editorial2 {
+    display: inline-block;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    color: #999999;
+}
+.boton-agregar2 {
+    background-color: #6f0009;
+    border: 0px solid #6f0009;
+    color: white;
+    padding: 4px 16px 11px;
+}
+/* manga demon slayer */
+.titulo3{
+    font-size:22px;
+}
+.alinear3{
+    display: inline-block;
+    margin-top: 1rem;
+    width: 200px;
+    height: 300px;
+    font-size: 1.8rem;
+    cursor: pointer;
+    box-shadow: 0 .5rem 1rem  rgba(0, 0, 0, .1);
+    transition: all .3s linear;
+}
+.alinear3:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.editorial3 {
+    display: inline-block;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    color: #999999;
+}
+.boton-agregar3 {
+    background-color: #6f0009;
+    border: 0px solid #6f0009;
+    color: white;
+    padding: 4px 16px 11px;
+}
+/* manga una habitacion de la color de la felicidad */
+.titulo4{
+    font-size:13.4px;
+}
+.alinear4{
+    display: inline-block;
+    margin-top: 1rem;
+    width: 200px;
+    height: 300px;
+    font-size: 1.8rem;
+    cursor: pointer;
+    box-shadow: 0 .5rem 1rem  rgba(0, 0, 0, .1);
+    transition: all .3s linear;
+}
+.alinear4:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.editorial4 {
+    display: inline-block;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    color: #999999;
+}
+.boton-agregar4 {
+    background-color: #6f0009;
+    border: 0px solid #6f0009;
+    color: white;
+    padding: 4px 16px 11px;
+}
+/* manga farewell, my dear cramer 01 */
+.titulo5{
+    font-size:19.6px;
+}
+.alinear5{
+    display: inline-block;
+    margin-top: 1rem;
+    width: 200px;
+    height: 300px;
+    font-size: 1.8rem;
+    cursor: pointer;
+    box-shadow: 0 .5rem 1rem  rgba(0, 0, 0, .1);
+    transition: all .3s linear;
+}
+.alinear5:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.editorial5 {
+    display: inline-block;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    color: #999999;
+}
+.boton-agregar5 {
+    background-color: #6f0009;
+    border: 0px solid #6f0009;
+    color: white;
+    padding: 4px 16px 11px;
+}
+/* manga ataque a los titanes */
+.titulo6{
+    font-size:22px;
+}
+.alinear6{
+    display: inline-block;
+    margin-top: 1rem;
+    width: 200px;
+    height: 300px;
+    font-size: 1.8rem;
+    cursor: pointer;
+    box-shadow: 0 .5rem 1rem  rgba(0, 0, 0, .1);
+    transition: all .3s linear;
+}
+.alinear6:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.editorial6 {
+    display: inline-block;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    color: #999999;
+}
+.boton-agregar6{
+    background-color: #6f0009;
+    border: 0px solid #6f0009;
+    color: white;
+    padding: 4px 16px 11px;
+}
+/* manga bloom into you */
+.titulo7{
+    font-size:22px;
+}
+.alinear7{
+    display: inline-block;
+    margin-top: 1rem;
+    width: 200px;
+    height: 300px;
+    font-size: 1.8rem;
+    cursor: pointer;
+    box-shadow: 0 .5rem 1rem  rgba(0, 0, 0, .1);
+    transition: all .3s linear;
+}
+.alinear7:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.editorial7{
+    display: inline-block;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    color: #999999;
+}
+.boton-agregar7{
+    background-color: #6f0009;
+    border: 0px solid #6f0009;
+    color: white;
+    padding: 4px 16px 11px;
+}
+/* manga Akame ga kill 02 */
+.titulo8{
+    font-size:22px;
+}
+.alinear8{
+    display: inline-block;
+    margin-top: 1rem;
+    width: 200px;
+    height: 300px;
+    font-size: 1.8rem;
+    cursor: pointer;
+    box-shadow: 0 .5rem 1rem  rgba(0, 0, 0, .1);
+    transition: all .3s linear;
+}
+.alinear8:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.editorial8{
+    display: inline-block;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    color: #999999;
+}
+.boton-agregar8{
+    background-color: #6f0009;
+    border: 0px solid #6f0009;
+    color: white;
+    padding: 4px 16px 11px;
+}

@@ -35,7 +35,7 @@ body{
 .navbar a{
     display: block;
     padding: 23px 20px;
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 15px;
@@ -63,19 +63,11 @@ p {
     font-size: 18px;
 }
 
-.container{
-	position: absolute;
-	left: 48%;
-	top: 45%;
-	transform: translate(-50%,-50%);
-	padding: 10px;
-}
-
 input {
 	outline: none;
 	box-sizing: border-box;
 	height: 60px;
-	width: 0px;
+	width: 200px;
 	padding:20px;
 	color: #000;
 	border-radius: 50px;
@@ -116,4 +108,60 @@ input {
 
 .btn:hover{
 	background: #cc0000;
+}
+.pie-pagina{
+    display: inline-block;
+    margin-top: 5rem;
+    width: 100%;
+    background-color: #010006;
+}
+.pie-pagina .grupo1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: auto;
+}
+.pie-pagina .grupo1 .box figure{
+    width: 100px;
+    height: 100px;
+    display: flex;
+}
+.pie-pagina .grupo1 .box figure img{
+    display: inline-block;
+    margin-top: 3rem;
+    width: 250px;
+}
+.pie-pagina .grupo1 .box h2{
+    display: inline-block;
+    margin-top: 1rem;
+    color: #c8c8c8;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo1 .box p{
+    color: #a8a7a7;
+}
+.r1 a {
+    display: inline-block;
+    text-decoration: none;
+    color: #999999;
+}
+.r2 a {
+    display: inline-block;
+    text-decoration: none;
+    color: #999999;
+}
+.r3 a { 
+    display: inline-block;
+    text-decoration: none;
+    color: #999999;
+}
+.pie-pagina .grupo2{
+    background-color: #040116;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
 }

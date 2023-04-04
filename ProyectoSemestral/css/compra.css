@@ -106,7 +106,10 @@ input {
 }
 
 
-
+.c-modal a{
+    text-decoration: none;
+    color: white;
+}
 
 
 .pie-pagina{

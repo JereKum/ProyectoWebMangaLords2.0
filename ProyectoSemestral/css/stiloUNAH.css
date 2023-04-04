@@ -15,12 +15,6 @@
     margin-right: 10px;
     text-decoration: none;
 }
-.head .logo figure img{
-    display: inline-block;
-    padding-left:3rem;
-    margin-top: 1rem;
-    width: 122px;
-}
 .navbar a{
     display: block;
     padding: 23px 20px;
@@ -33,14 +27,6 @@
 .navbar a:hover {
     background: #2E2A29;
 }
-#container1{
-    position: absolute;
-    left: 48%;
-    top: 45%;
-    transform: translate(-50%,-50%);
-    padding: 10px;
-}
-
 input {
     outline: none;
     box-sizing: border-box;

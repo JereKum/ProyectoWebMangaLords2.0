@@ -1,3 +1,12 @@
+/* configuracionde fondo inicio */
+body{
+    background-image: url(../img/fondoU.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* configuracionde fondo fin */
 /* barra de navegacion */
 .jumbotron{
     background: #212529;
@@ -5,6 +14,9 @@
 }
 *{
     font-family: sans-serif;
+}
+.logo{
+    margin-left: 30px;
 }
 .head{
     display: flex;
@@ -30,14 +42,15 @@
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 17px;
+    align-items: center;
 }
 
 .navbar a:hover {
     background: #2E2A29;
 }
 
-input {
+.buscarM {
     outline: none;
     box-sizing: border-box;
     height: 60px;
@@ -54,7 +67,7 @@ input {
     color: #494646;
 }
 
-.btn {
+.boton {
     position: absolute;
     height: 60px;
     width: 60px;
@@ -65,34 +78,60 @@ input {
     transition: .5s;
 }
 
-.btn i {
+.boton i {
     font-size: 25px;
     color: #ffffff;
     line-height: 80px;
     transition: all .7s ease;
 }
 
-.container:hover input {
+.buscar:hover .buscarM {
     width: 350px;
 }
 
-.container:hover i{
+.buscar:hover i{
     transform: rotate(-360deg);
 }
 
-.btn:hover{
+.boton:hover{
     background: #cc0000;
 }
 /* cuerpo */
 .col-md-12{
-    display: inline-block;
-    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 6rem;
+    width: 60%;
 }
+.col-md-12  .row .columna{
+    width: 500px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius:2rem;
+    box-shadow: 7px 13px 37px #000;
+    line-height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    background: #e1e0e0;
+}
+/* inicio bolsa de compras */
+/* fin bolsa de compras */
 /* manga citrus */
 .titulo{
     font-size:22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .alinear{
+    justify-content: center;
+    align-items: center;
     display: inline-block;
     margin-top: 1rem;
     width: 200px;
@@ -101,6 +140,10 @@ input {
     cursor: pointer;
     box-shadow: 0 .5rem 1rem  rgba(0, 0, 0, .1);
     transition: all .3s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .alinear:hover{
     transform: scale(1.1);
@@ -110,21 +153,55 @@ input {
     -o-transform: scale(1.1);
 }
 .editorial {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     margin-top: 1rem;
-    text-transform: uppercase;
-    color: #999999;
+    color: #1f0a40;
+    font-size: 20px;
+    align-items: center;
 }
 
 .boton-agregar {
-    background-color: #6f0009;
-    border: 0px solid #6f0009;
-    color: white;
-    padding: 4px 16px 11px;
+    line-height: 40px;
+    background: #6f0009;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .1s ease all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.box{
+    display: inline-block;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.valorClp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    font-size: 25px;
+    margin-top: 10px;
 }
 /* manga another */
 .titulo2{
     font-size:22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .alinear2{
     display: inline-block;
@@ -135,6 +212,10 @@ input {
     cursor: pointer;
     box-shadow: 0 .5rem 1rem  rgba(0, 0, 0, .1);
     transition: all .3s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .alinear2:hover{
     transform: scale(1.1);
@@ -144,20 +225,44 @@ input {
     -o-transform: scale(1.1);
 }
 .editorial2 {
-    display: inline-block;
     margin-top: 1rem;
-    text-transform: uppercase;
-    color: #999999;
+    color: #1f0a40;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .boton-agregar2 {
-    background-color: #6f0009;
-    border: 0px solid #6f0009;
-    color: white;
-    padding: 4px 16px 11px;
+    line-height: 40px;
+    background: #6f0009;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .1s ease all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.box2{
+    display: inline-block;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
 }
 /* manga demon slayer */
 .titulo3{
     font-size:22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .alinear3{
     display: inline-block;
@@ -168,6 +273,10 @@ input {
     cursor: pointer;
     box-shadow: 0 .5rem 1rem  rgba(0, 0, 0, .1);
     transition: all .3s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .alinear3:hover{
     transform: scale(1.1);
@@ -177,20 +286,44 @@ input {
     -o-transform: scale(1.1);
 }
 .editorial3 {
-    display: inline-block;
     margin-top: 1rem;
-    text-transform: uppercase;
-    color: #999999;
+    color: #1f0a40;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .boton-agregar3 {
-    background-color: #6f0009;
-    border: 0px solid #6f0009;
-    color: white;
-    padding: 4px 16px 11px;
+    line-height: 40px;
+    background: #6f0009;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .1s ease all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.box3{
+    display: inline-block;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
 }
 /* manga una habitacion de la color de la felicidad */
 .titulo4{
-    font-size:13.4px;
+    font-size:19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .alinear4{
     display: inline-block;
@@ -201,6 +334,10 @@ input {
     cursor: pointer;
     box-shadow: 0 .5rem 1rem  rgba(0, 0, 0, .1);
     transition: all .3s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .alinear4:hover{
     transform: scale(1.1);
@@ -210,20 +347,45 @@ input {
     -o-transform: scale(1.1);
 }
 .editorial4 {
-    display: inline-block;
+    display: flex;
     margin-top: 1rem;
-    text-transform: uppercase;
-    color: #999999;
+    color: #1f0a40;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .boton-agregar4 {
-    background-color: #6f0009;
-    border: 0px solid #6f0009;
-    color: white;
-    padding: 4px 16px 11px;
+    line-height: 40px;
+    background: #6f0009;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .1s ease all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.box4{
+    display: inline-block;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
 }
 /* manga farewell, my dear cramer 01 */
 .titulo5{
-    font-size:19.6px;
+    font-size:17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .alinear5{
     display: inline-block;
@@ -234,6 +396,10 @@ input {
     cursor: pointer;
     box-shadow: 0 .5rem 1rem  rgba(0, 0, 0, .1);
     transition: all .3s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .alinear5:hover{
     transform: scale(1.1);
@@ -243,20 +409,45 @@ input {
     -o-transform: scale(1.1);
 }
 .editorial5 {
-    display: inline-block;
+    display: flex;
     margin-top: 1rem;
-    text-transform: uppercase;
-    color: #999999;
+    color: #1f0a40;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .boton-agregar5 {
-    background-color: #6f0009;
-    border: 0px solid #6f0009;
-    color: white;
-    padding: 4px 16px 11px;
+    line-height: 40px;
+    background: #6f0009;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .1s ease all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.box5{
+    display: inline-block;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
 }
 /* manga ataque a los titanes */
 .titulo6{
-    font-size:22px;
+    font-size:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .alinear6{
     display: inline-block;
@@ -267,6 +458,10 @@ input {
     cursor: pointer;
     box-shadow: 0 .5rem 1rem  rgba(0, 0, 0, .1);
     transition: all .3s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .alinear6:hover{
     transform: scale(1.1);
@@ -276,20 +471,45 @@ input {
     -o-transform: scale(1.1);
 }
 .editorial6 {
-    display: inline-block;
+    display: flex;
     margin-top: 1rem;
-    text-transform: uppercase;
-    color: #999999;
+    color: #1f0a40;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .boton-agregar6{
-    background-color: #6f0009;
-    border: 0px solid #6f0009;
-    color: white;
-    padding: 4px 16px 11px;
+    line-height: 40px;
+    background: #6f0009;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .1s ease all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.box6{
+    display: inline-block;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
 }
 /* manga bloom into you */
 .titulo7{
     font-size:22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .alinear7{
     display: inline-block;
@@ -300,6 +520,10 @@ input {
     cursor: pointer;
     box-shadow: 0 .5rem 1rem  rgba(0, 0, 0, .1);
     transition: all .3s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .alinear7:hover{
     transform: scale(1.1);
@@ -309,20 +533,45 @@ input {
     -o-transform: scale(1.1);
 }
 .editorial7{
-    display: inline-block;
+    display: flex;
     margin-top: 1rem;
-    text-transform: uppercase;
-    color: #999999;
+    color: #1f0a40;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .boton-agregar7{
-    background-color: #6f0009;
-    border: 0px solid #6f0009;
-    color: white;
-    padding: 4px 16px 11px;
+    line-height: 40px;
+    background: #6f0009;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .1s ease all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.box7{
+    display: inline-block;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
 }
 /* manga Akame ga kill 02 */
 .titulo8{
     font-size:22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .alinear8{
     display: inline-block;
@@ -334,6 +583,10 @@ input {
     box-shadow: 0 .5rem 1rem  rgba(0, 0, 0, .1);
     transition: all .3s linear;
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .alinear8:hover{
     transform: scale(1.1);
@@ -343,19 +596,261 @@ input {
     -o-transform: scale(1.1);
 }
 .editorial8{
-    display: inline-block;
+    display: flex;
     margin-top: 1rem;
-    text-transform: uppercase;
-    color: #999999;
+    color: #1f0a40;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .boton-agregar8{
-    background-color: #6f0009;
-    border: 0px solid #6f0009;
-    color: white;
-    padding: 4px 16px 11px;
+    line-height: 40px;
+    background: #6f0009;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .1s ease all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.box8{
+    display: inline-block;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
 }
 /* seccion de generos  */
 
+/*:::Boton-Modal:::*/
+
+.boton-modal label{
+    padding: 10% 15px;
+    background-color: #5488a3;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.boton-modal label:hover{
+    background-color: #185e83;
+}
+/*:::Fin Boton-Modal:::*/
+
+/*:::Ventana Modal:::*/
+#btn-modal{
+    display: none;
+}
+.container-modal{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0; left: 0;
+    background-color: rgba(144, 148, 150, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+#btn-modal:checked ~ .container-modal{
+    display: flex;
+}
+.content-modal{
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+.content-modal h2{
+    margin-bottom: 15px;
+}
+.content-modal p{
+    padding: 15px 0px;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb; 
+}
+.content-modal .btn-cerrar{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+.content-modal .btn-cerrar label a{
+    padding: 7px 10px;
+    background-color: #5488a3;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.content-modal .btn-cerrar label:hover{
+    background-color: #185e83;
+}
+.cerrar-modal{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: -1;
+}
+@media screen and (max-width:800px) {
+    .content-modal{
+        width: 90%;
+    }
+}
+/*:::Fin Ventana Modal:::*/
+
+/* inicio stilo comentarios */
+.testimonios{
+    /* width: auto; */
+    display: flex;
+    margin-top: 4rem;
+    background: #e1e0e0;
+    justify-content: center;
+    flex-direction: column;
+    width: auto;
+    margin: auto;
+    padding: 30px;
+    margin-top: 100px;
+    border-radius:4px;
+    box-shadow: 7px 13px 37px #2a2a2a;
+}
+.espacionoma .espacio{
+    display: flex;
+    margin-top: 4rem;
+}
+.testimonio__header{
+    margin: 20px 0px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+}
+.testimonio__header .comentarios{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.6rem;
+    color: #040476;
+    padding: 10px 20px;
+}
+.testimonio__header .texto1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.3rem;
+    color: #484876;
+}
+.testimonios_contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.testimonios_caja{
+    width: 500px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+}
+.perfil-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    overflow: hidden;
+    margin-right: 30px;
+}
+.perfil-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: center;
+}
+.perfil{
+    display: flex;
+    align-items: center;
+}
+.name-user{
+    display: flex;
+    flex-direction: column;
+}
+.name-user strong{
+    color: #000;
+    font-size: 1.3rem;
+}
+.name-user span{
+    color: #2b2b2b;
+    font-size: 15px;
+}
+.reseñas{
+    color: #f9d71c;
+}
+.caja-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.comentarios__clientes{
+    color: #000;
+    font-size: 20px;
+}
+/* fin stilo comentarios */
+
+/* inicio seccion generos */
+.seccionGeneros{
+    display: flex;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.seccionG_caja{
+    width: 350px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.seccionG_caja .fotoGenero .imagenG{
+    width: 200px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.seccionG_caja .descriptionG .tituloG{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    font-size: 27px;
+}
+.seccionG_caja .descriptionG .desc{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+/* fin secciongeneros */
 /* pie de pagina */
 .pie-pagina{
     display: inline-block;
@@ -379,7 +874,7 @@ input {
 }
 .pie-pagina .grupo1 .box figure img{
     display: inline-block;
-    margin-top: 3rem;
+    margin-top: rem;
     width: 250px;
 }
 .pie-pagina .grupo1 .box h2{
@@ -392,20 +887,21 @@ input {
 .pie-pagina .grupo1 .box p{
     color: #a8a7a7;
 }
-.r1 a {
-    display: inline-block;
-    text-decoration: none;
-    color: #999999;
+.r1 img {
+    width: 2.2rem;
+    height: 2.2rem;
 }
-.r2 a {
+.r2 img {
     display: inline-block;
-    text-decoration: none;
-    color: #999999;
+    margin-top: 1rem;
+    width: 2rem;
+    height: 2rem;
 }
-.r3 a { 
+.r3 img { 
     display: inline-block;
-    text-decoration: none;
-    color: #999999;
+    margin-top: 1rem;
+    width: 2rem;
+    height: 2rem;
 }
 .pie-pagina .grupo2{
     background-color: #040116;

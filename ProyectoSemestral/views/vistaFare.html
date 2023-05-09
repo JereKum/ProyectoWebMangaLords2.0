@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MangaLords</title>
     <link rel="icon" href="../img/logo.png">
-    <link rel="stylesheet" href="../css/stiloFare.css">
+    <link rel="stylesheet" href="../css/stilosVistasM.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
@@ -28,18 +28,37 @@
         <nav class="navbar">
             <a href="../MangaLords.html">Inicio</a>
             <a href="../views/directorioManga.html">Directorio</a>
-            <a href="#">Contactanos</a>
-            <a href="#">Bolsa</a>
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=new">Contactanos</a>
+            
             <a href="../views/RegistroUsuario.html">Registrarse</a>
         </nav>
+
+        <!--Boton-->
+        <div class="boton-modal">
+            <label for="btn-modal">Compra</label>
+        </div>
+        <!--Fin de Boton-->
+        <!--Ventana Modal-->
+        <input type="checkbox" id="btn-modal">
+        <div class="container-modal">
+            <div class="content-modal">
+                <h2>Escoga una opcion</h2>
+                <div class="btn-cerrar">
+                    <label for="btn-modal">
+                        <a href="../views/compra.html">Pagar</a></label>
+                </div>
+            </div>
+            <label for="btn-modal" class="cerrar-modal"></label>
+        </div>
+        <!--Fin de Ventana Modal-->
     </div>
     <!-- contenedor con columns -->
     <div class="container">
         <div class="container container-fluid-mobile">
             <div class="row">
                 <div class="col">
-                    <div class="iFare">
-                        <img class="Fare" src="../img/farewell01.jpg" alt="Farewell, My Dear Cramer 01">
+                    <div class="img">
+                        <img class="imagen" src="../img/farewell01.jpg" alt="Farewell, My Dear Cramer 01">
                     </div>
                 </div>
                 <div class="col-6">
@@ -106,13 +125,19 @@
                 <h2>SIGUENOS</h2>
                 <div class="redSocial">
                     <div class="r1">
-                        <a href="#">Facebook</a>
+                        <a href="#">
+                            <img src="../img/iconFAce.png" alt="">
+                        </a>
                     </div>
                     <div class="r2">
-                        <a href="#">Instagram</a>
+                        <a href="#">
+                            <img src="../img/iconIg.png" alt="">
+                        </a>
                     </div>
                     <div class="r3">
-                        <a href="#">TikTok</a>
+                        <a href="#">
+                            <img src="../img/iconTik.png" alt="">
+                        </a>
                     </div>
                 </div>
             </div>

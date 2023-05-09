@@ -1,188 +1,169 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
-
-
+/* configuracionde fondo inicio */
 body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-image: url(../img/fondo.jpg);
+    background-image: url(../img/fondo5.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
+/* barranav */
+/* barranav fin */
 
-.form{
-    background-color: #fff;
-    padding: 3px;
-}
-
-h1{
-    font-size: 2rem;
-    font-family: 'Poppins';
-    color: #212F3C;
-    text-align: center;
-}
-
-.container{
-    padding: 15px;
-    width: 100%;
-}
-
-.container-inputs{
-    font-size: 22px;
-    color: #283747;
-    border: solid 1px #ccc;
-    margin-bottom: 15px;
+/* cuerpo */
+/* Registrar */
+.registrar{
+    margin: auto;
     padding: 10px;
 }
-
-input[type="text"]{
-    font-size: 1.2rem;
-    font-family: 'Poppins';
-    border: none;
-    margin-left: 10px;
-    width: 95%;
+/* registro cuadro */
+.form-register{
+    width: 550px;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    -ms-border-radius:4px;
+    -o-border-radius:4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
 }
-
-input[type="tel"]{
-    font-size: 1.2rem;
-    font-family: 'Poppins';
-    border: none;
-    margin-left: 10px;
-    width: 95%;
+.form-register h4{
+    font-size: 30px;
+    margin-bottom: 20px;
 }
-
-input[type="email"]{
-    font-size: 1.2rem;
-    font-family: 'Poppins';
-    border: none;
-    margin-left: 10px;
-    width: 95%;
+.formulario{
+    gap: 20px;
 }
-
-input[type="password"]{
-    font-size: 1.2rem;
-    font-family: 'Poppins';
-    border: none;
-    margin-left: 10px;
-    width: 95%;
-}
-
-.button{
-    margin-top: 20px;
-}
-
-input[type="submit"]{
-    width: 100%;
-    padding: 15px;
-    font-size: 1.4rem;
-    color: #fff;
-    background-color: #283747;
-    border-radius: 5px;
-}
-
-input[type="submit"]:hover{
-    background-color: #3347b8;
-    font-weight: 700;
-}
-
-p{
-    font-size: 1.3rem;
-    font-family: sans-serif;
-    text-align: center;
-}
-
-.link{
-    color: #3347b8;
-    text-decoration: none;
-}
-
-.link:hover{
-    color: red;
-    font-size: 1.5rem;
-    font-weight: 700;
-}
-
-/*RESPONSIVE*/
-@media screen and (min-width: 767px) {
-    .form{
-        margin: auto;
-        width: 510px;
-        margin-top: 50px;
-        padding: 10px;
-        border-radius: 25px;
-    }
-    .container-inputs{
-        font-size: 19px;
-        padding: 15px;
-        margin-right: 20px;
-    }
-    input[type="text"]{
-        width: 90%;
-        font-size: 19px;
-    }
-    input[type="tel"]{
-        width: 90%;
-        font-size: 19px;
-    }
-    input[type="email"]{
-        width: 90%;
-        font-size: 19px;
-    }
-    input[type="password"]{
-        width: 90%;
-        font-size: 19px;
-    }
-    input[type="submit"]{
-        width: 96%;
-        font-size: 19px;
-    }
-    p{
-        font-size: 20px;
-        padding: 0px 15px;
-
-    }
-}
-
-.head{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 63px;
-    background: #141313;
-    position: fixed;
-    width: 100%;
-    z-index: 100;
-}
-
-.navbar{
-    display: flex;
-    margin-right: 10px;
-    text-decoration: none;    
-}
-
-.logo{
-    margin-left: 30px;
-}
-.navbar a{
+.formulario__label{
     display: block;
-    padding: 23px 20px;
-    color: #ffffff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 15px;
+    font-weight: 700;
+    padding: 10px;
+    cursor: pointer;
 }
-
-.navbar a:hover {
-    background: #2E2A29;
+.formulario__input{
+    width: 100%;
+    background: #4d6073;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 18px;
+    position: relative;
+    transition: .3s ease all;
 }
-
-.header {
+.formulario__input:focus{
+    border: #1f53c5;
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
+}
+.formulario__input-error{
+    font-size: 12px;
+    margin-bottom: 0;
+    display: none;
+}
+.formulario__input-error-activo{
+    display: block;
+}
+.formulario__validacion-estado{
+    position: absolute;
+    right: 32rem;
+    padding-top: 15px;
+    z-index: 100;
+    font-size: 16px;
+    /* opacity: 0; */
+}
+.formulario__checkbox{
+    margin-right: 10px;
+}
+.formulario__grupo-terminos,
+.formulario__mensaje,
+.formulario__grupo-btn-enviar{
+    grid-column: span 2;
+}
+.formulario__mensaje{
+    height: 45px;
+    line-height: 45px;
+    background: #f66060;
+    padding: 0 15px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    display: none;
+}
+.formulario__mensaje-active{
+    display: block;
+}
+.formulario__mensaje p{
+    margin: 0;
+}
+.formulario__grupo-btn-enviar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formulario__btn{
+    height: 45px;
+    line-height: 40px;
+    width: 30%;
+    background: #1f53c5;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    cursor: pointer;
+    transition: .1s ease all;
+    -webkit-transition: .1s ease all;
+    -moz-transition: .1s ease all;
+    -ms-transition: .1s ease all;
+    -o-transition: .1s ease all;
+}
+.formulario__btn:hover{
+    box-shadow: 3px 0px 30px rgba(163,163,163,1);
+}
+.formulario__mensaje-exito{
+    font-size: 14px;
+    color: #119200;
+    display: none;
+}
+.formulario__mensaje-exito-active{
+    display: block;
+}
+.linkCuenta{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
-
+/* estilos validaciones */
+.formulario__grupo-correcto .formulario__validacion-estado{
+    color: #119200;
+    opacity: 1;
+}
+.formulario__grupo-incorrecto .formulario__label{
+    color: #bb2929;
+}
+.formulario__grupo-incorrecto .formulario__validacion-estado{
+    color: #bb2929;
+    opacity: 1;
+}
+.formulario__grupo-incorrecto .formulario__input{
+    border: 3px solid #bb2929;
+}
+/* finregistro */
+/* pie de pagina */
 .pie-pagina{
     display: inline-block;
-    margin-top: 5rem;
+    margin-top: 12rem;
     width: 100%;
     background-color: #010006;
 }
@@ -215,79 +196,25 @@ p{
 .pie-pagina .grupo1 .box p{
     color: #a8a7a7;
 }
-.r1 a {
-    display: inline-block;
-    text-decoration: none;
-    color: #999999;
+.r1 img {
+    width: 2.2rem;
+    height: 2.2rem;
 }
-.r2 a {
+.r2 img {
     display: inline-block;
-    text-decoration: none;
-    color: #999999;
+    margin-top: 1rem;
+    width: 2rem;
+    height: 2rem;
 }
-.r3 a { 
+.r3 img {
     display: inline-block;
-    text-decoration: none;
-    color: #999999;
+    margin-top: 1rem;
+    width: 2rem;
+    height: 2rem;
 }
 .pie-pagina .grupo2{
     background-color: #040116;
     padding: 15px 10px;
     text-align: center;
     color: #fff;
-}
-
-#container1{
-    position: absolute;
-    left: 48%;
-    top: 45%;
-    transform: translate(-50%,-50%);
-    padding: 10px;
-}
-
-input {
-    outline: none;
-    box-sizing: border-box;
-    height: 60px;
-    width: 200px;
-    padding:20px;
-    color: #000;
-    border-radius: 50px;
-    font-size: 20px;
-    border: 1px solid #D50000;
-    transition: all .7s ease;
-}
-
-::placeholder {
-    color: #494646;
-}
-
-.btn {
-    position: absolute;
-    height: 60px;
-    width: 60px;
-    line-height: 80px;
-    border-radius: 50%;
-    text-align: center;
-    cursor: pointer;
-    transition: .5s;
-}
-
-.btn i {
-    font-size: 25px;
-    color: white;
-    line-height: 80px;
-    transition: all .7s ease;
-}
-
-.container:hover input {
-    width: 350px;
-}
-
-.container:hover i{
-    transform: rotate(-360deg);
-}
-
-.btn:hover{
-    background: #cc0000;
 }

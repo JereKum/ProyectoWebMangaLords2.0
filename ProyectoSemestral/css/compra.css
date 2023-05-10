@@ -1,16 +1,14 @@
 *{
-    margin: 0%;
-    padding: 0%;
-    border: 0;
-    font-size: 100%;
-    glyph-orientation-vertical: baseline;
     font-family: sans-serif;
 }
 
+.logo{
+    margin-left: 30px;
+}
 .head{
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
     height: 63px;
     background: #141313;
     position: fixed;
@@ -21,16 +19,18 @@
 .navbar{
     display: flex;
     margin-right: 10px;
+    margin-bottom: 20px;
     text-decoration: none;
+    height: 69px;
 }
-
 .navbar a{
     display: block;
     padding: 23px 20px;
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 17px;
+    align-items: center;
 }
 
 .navbar a:hover {
@@ -48,7 +48,6 @@ input {
     border: 1px solid #D50000;
     transition: all .7s ease;
 }
-
 ::placeholder {
     color: #494646;
 }
@@ -66,7 +65,7 @@ input {
 
 .btn i {
     font-size: 25px;
-    color: white;
+    color: #ffffff;
     line-height: 80px;
     transition: all .7s ease;
 }
@@ -82,7 +81,23 @@ input {
 .btn:hover{
     background: #cc0000;
 }
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.title {
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+p {
+    
+    font-size: 18px;
+}
 
 /*:::Boton-Modal:::*/
 
@@ -199,52 +214,67 @@ input {
     margin-top: 1rem;
     color: #c8c8c8;
     margin-bottom: 25px;
-    font-size: 20px;
+    font-size: 17px;
 }
 .pie-pagina .grupo1 .box p{
     color: #a8a7a7;
 }
-.r1 a {
-    display: inline-block;
-    text-decoration: none;
-    color: #999999;
+.r1 img {
+    width: 3.8rem;
+    height: 3.8rem;
 }
-.r2 a {
+.r2 img {
     display: inline-block;
-    text-decoration: none;
-    color: #999999;
+    margin-top: 2rem;
+    width: 3rem;
+    height: 3rem;
 }
-.r3 a { 
+.r3 img {
     display: inline-block;
-    text-decoration: none;
-    color: #999999;
+    margin-top: 2rem;
+    width: 3rem;
+    height: 3rem;
 }
 .pie-pagina .grupo2{
     background-color: #040116;
     padding: 15px 10px;
     text-align: center;
     color: #fff;
+    font-size: 17px;
 }
 /* fin pie de pagina */
-.cont-form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 25px;
-    min-height: 100vh;
-    background: url(../img/fondo.jpg)no-repeat;
-    background-position: center;
+
+body{
+    background-image: url(../img/fondo4.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
     background-size: cover;
-    padding-bottom: 70px;
+    background-attachment: fixed;
+}
+.cont-form{
+    padding-top: 100px;
+}
+.cont-form form span{
+    color: #fff;
+}
+.cont-form form h3{
+    color: #fff;
+}
+.cont-form form label{
+    color: #fff;
 }
 .cont-form form{
-    padding: 20px;
+    padding: 200px;
     width: 700px;
-    background: url(../img/ryuk.png.png)no-repeat;
+    margin: 0 auto;
+    background: url(../img/fondo!.jpg)no-repeat;
     background-position: center;
     background-size: cover;
     box-shadow: 0 5px 10px rgb(0, 0, 0,.1);
+    padding: 15px;
+    border-radius: 22px;
 }
+
 .cont-form form .row-form{
     display: flex;
     flex-wrap: wrap;

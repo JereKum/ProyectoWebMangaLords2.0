@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolsa</title>
+    <link rel="icon" href="../img/logo.png">
+    <link rel="stylesheet" href="../css/bolsaStyle.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <!-- barra de navegacion  -->
+    <header class="head">
+        <div class="logo">
+                <a href="../MangaLords.html"><img src="../img/logo.png" alt="logo"></a>
+        </div>
+
+        <div class="container buscar" style="width: 244px;">
+                <input class="buscarM" type="text" placeholder="Buscar manga">
+            <div class="btn boton">
+                <i class=""></i>
+            </div>  
+        </div>
+
+        <nav class="navbar">
+            <a href="../MangaLords.html">Inicio</a>
+            <a href="../views/directorioManga.html">Directorio</a>
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=new">Contáctanos</a>
+            <a href="../views/RegistroUsuario.html">Registrarse</a>
+            <a href="../views/bolsa.html"><img src="../img/bolsaCompra.png" alt="bolsa"></a>
+        </nav>
+        
+        <!--Boton-->
+        <div class="boton-modal">
+            <label for="btn-modal">Compra</label>
+        </div>
+        <!--Fin de Boton-->
+        <!--Ventana Modal-->
+    <input type="checkbox" id="btn-modal">
+        <div class="container-modal">
+            <div class="content-modal">
+                <h2>Escoja una opción</h2>
+                <div class="btn-cerrar">
+                    <label for="btn-modal">
+                        <a href="../views/compra.html">Pagar</a></label>
+                </div>
+            </div>
+            <label for="btn-modal" class="cerrar-modal"></label>
+        </div>
+        <!--Fin de Ventana Modal-->
+    </header>
+
+    <section>
+        <h4>Tu bolsa</h4>
+        <div class="cart-container">
+            <div class="cart-wrap">
+                <div class="cart-manga-container">
+                    <div class="cart-card">
+                        <div class="cart-card__img-contain">
+                            <img class="cart-card__img"
+                                src="../img/another.jpg"
+                                alt="Another">
+                        </div>
+                        <div class="cart-card__details">
+                            <div class="cart-card__texts">
+                                <p class="cart-card__details__text weight-600">Another</p>
+                                <p class="cart-card__details__text">Tomo: 4</p>
+                                <p class="cart-card__details__text">Stock: 5</p>
+                                <p class="cart-card__details__text">Precio: <span class="weight-600">$9.500 CLP</span>
+                                </p>
+                            </div>
+                            <div class="count-prod">
+                                <button class="sum btn btn-red">-</button>
+                                <p id="count-number" class="count-prod__number">2</p>
+                                <button class="less btn btn-red">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-card">
+                        <div class="cart-card__img-contain">
+                            <img class="cart-card__img" src="../img/demonSlayer.jpg" alt="Demon Slayer">
+                        </div>
+                        <div class="cart-card__details">
+                            <div class="cart-card__texts">
+                                <p class="cart-card__details__text weight-600">Demon Slayer</p>
+                                <p class="cart-card__details__text">Tomo: 13</p>
+                                <p class="cart-card__details__text">Stock: 2</p>
+                                <p class="cart-card__details__text"></p>
+                                <p class="cart-card__details__text">Precio: <span class="weight-600">$9.000 CLP</span>
+                                </p>
+                            </div>
+                            <div class="count-prod">
+                                <button type="submit" class="sum btn btn-red">-</button>
+                                <p class="count-prod__number">1</p>
+                                <button type="submit" class="less btn btn-red">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-prebuy">
+                    <div class="cart-resume">
+                        <h3 class="cart-resume__title">Resumen del pedido</h3>
+                        <div class="cart-resume__details">
+                            <p class="cart-resuem__text">Total de Productos: 3</p>
+                            <p class="cart-resuem__text">Total: <span class="weight-600">$28.000</span></p>
+                            <form>
+                                <div class="form-group">
+                                    <label for="name"></label>
+                                    <input type="text" class="form-control" id="name" placeholder="Cupon de descuento">
+                                </div>
+                                <div class="form-group">
+                                    <label for="direccion">Direccion</label>
+                                    <input type="text" class="form-control" id="direccion" placeholder="Ciudad">
+                                </div>
+                                <div class="form-group">
+                                    <label for="direccion">Comuna</label>
+                                    <input type="text" class="form-control" id="direccion" placeholder="Comuna">
+                                </div>
+                                <div class="form-group">
+                                    <label for="direccion">Calle y Numero de depto o casa</label>
+                                    <input type="text" class="form-control" id="direccion" placeholder="Calle,Vivienda">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="button-pay">
+                        <a href="../views/compra.html"><button type="button" class="btn btn-pagar btn-blue">Ir a pagar</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- pie pagina -->
+    <footer class="pie-pagina">
+        <div class="grupo1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="../img/logoFooter.png" alt="logo MangaLords">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>CONTÁCTANOS</h2>
+                <P>DIRECCIÓN: V Región, Chile</P>
+                <p>HORARIO DE ATENCIÓN: Lunes a Viernes de 10:00 a 19:00</p>
+                <p>E-MAIL:
+                    <a href="https://mail.google.com/mail/u/0/#inbox?compose=new">mangalords023@gmail.com</a>
+                </p>
+            </div>
+            <div class="box">
+                <h2>SÍGUENOS</h2>
+                <div class="redSocial">
+                    <div class="r1">
+                        <a href="#">
+                            <img src="../img/iconFAce.png" alt="">
+                        </a>
+                    </div>
+                    <div class="r2">
+                        <a href="#">
+                            <img src="../img/iconIg.png" alt="">
+                        </a>
+                    </div>
+                    <div class="r3">
+                        <a href="#">
+                            <img src="../img/iconTik.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grupo2">
+            <small>&copy; 2023 <b>Manga Lords</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+</body>
+</html>
